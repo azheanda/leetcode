@@ -30,8 +30,6 @@ public class Solution {
 
         Arrays.sort(num);
         for (int i = 0; i < num.length - 2; i = increment(num, i)) {
-            if (i > 0 && num[i] == num[i - 1])
-                continue;
             int p = i + 1, q = num.length - 1;
             while (p < q) {
                 if (num[p] + num[q] == -num[i]) {
