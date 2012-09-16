@@ -2,6 +2,8 @@
     judge small: passed
     judge large: passed
 
+    Improved version from AddBinary2.java
+
 */
 public class Solution {
     public String addBinary(String a, String b) {
