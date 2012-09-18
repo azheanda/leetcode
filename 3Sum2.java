@@ -28,7 +28,7 @@ public class Solution {
     }
     
     public static int binarySearch(int[] num,int p,int r, int val){
-        if(num==null || num.length==0 || val <num[p] || val>num[r] || p>r)
+        if(num==null || num.length==0 || p>r)
             return -1;
         int m = (p+r)/2;
         if( val ==num[m])
