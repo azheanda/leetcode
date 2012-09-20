@@ -25,6 +25,7 @@ public class Solution {
                 for(ArrayList<Integer> combo:find_combinationSum2(num,target-num[i],i-1)){
                     combo.add(num[i]);
                     if(!result.contains(combo))
+                if(i+1<=pointer  && num[i]==num[i+1])  // a better way to avoid redundancy than "if(!result.contains(combo))"
                         result.add(combo);
                 }     
         return result;

@@ -2,6 +2,9 @@
     Dynamic programming.
     It is extended from the climbing stairs problem.
 
+    judge small:476ms
+    judge large:940ms
+
 */
 
 
