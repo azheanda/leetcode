@@ -1,6 +1,6 @@
 /*
     The idea is to iterate each value in num, swap it with the first value, and add it to the permutations of the rest of the collection.
-    for example, input is a,b,c.  First, add a to (b,c) and (c,b), then add b to (a,c) and (c,a), at last, add c to (a,b) and (b,a)
+    for example, say input is a,b,c.  First, add a to (b,c) and (c,b), then add b to (a,c) and (c,a), at last, add c to (a,b) and (b,a).
 */
 
 
