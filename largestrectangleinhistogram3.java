@@ -1,5 +1,5 @@
 /*
-  http://tech-queries.blogspot.com/2011/03/maximum-area-rectangle-in-histogram.html
+  Explanation here: http://tech-queries.blogspot.com/2011/03/maximum-area-rectangle-in-histogram.html
 */
 
 import java.util.*;
