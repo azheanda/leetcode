@@ -13,6 +13,8 @@ public class Solution {
     public void recoverTree(TreeNode root) {
         // Start typing your Java solution below
         // DO NOT write main() function
+        firstNode =null;
+        secondNode = null;
         inorder(root,null);
         swap(firstNode,secondNode);
 
