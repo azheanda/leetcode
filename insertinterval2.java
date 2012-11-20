@@ -4,7 +4,7 @@
 
     This is simplified version of insertinterval1.java : When we are checking each interval i in intervals, once we find i should come after the inserting interval t, we append t, and then go ahead and append the rest of the elements in intervals to the result list and return it.
 
-
+    Another way is to use segment tree（http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=lowestCommonAncestor#Segment_Trees）.
 */
 
 /**
