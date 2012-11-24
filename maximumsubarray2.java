@@ -19,9 +19,9 @@ public class Solution {
         int maxRightSum = maxSubArray(A,mid+1,r);
         
         for(int i=mid;i>=l;i--){   // Note:this part is subtle.
-            sum+=A[i];
-            if(sum>leftSum)
-                leftSum =sum;
+            sum+=A[i];             // The code in the brackets is equivalent to one line of code:
+            if(sum>leftSum)        // leftSum = (sum+=A[i])>leftSum?sum:leftSum; // the parentheses are needed because the operator order of += is lower than ?: 
+                leftSum =sum;      
         }
         sum=0;
         for(int i=mid+1;i<=r;i++){
