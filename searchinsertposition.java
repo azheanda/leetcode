@@ -1,3 +1,26 @@
+// The previous method at the bottom is unnecessarily complicated
+
+public class Solution {
+    public int searchInsert(int[] A, int target) {
+        // Start typing your Java solution below
+        // DO NOT write main() function
+        int lo = 0, hi = A.length-1, mid = hi/2;
+
+        while(lo<=hi){
+            mid = (lo+hi)/2;
+            if(target == A[mid])
+                return mid;
+            else if(target > A[mid])
+                lo = mid+1;
+            else
+                hi = mid-1;         
+        }
+        return lo;
+
+    }
+}
+
+
 public class Solution {
     public int searchInsert(int[] A, int target) {
         // Start typing your Java solution below
