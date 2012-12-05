@@ -9,6 +9,26 @@ public class Solution {
         // Start typing your Java solution below
         // DO NOT write main() function
         long lo = 0;
+        long hi = x;
+
+        while(hi>=lo){     
+            long mid = lo+(hi-lo)/2;
+            if(x<mid*mid)
+                hi = mid-1;      // not hi = mid
+            else
+                lo = mid+1;    
+        }
+        return (int)hi;
+    }
+}
+
+// or
+
+public class Solution {
+    public int sqrt(int x) {
+        // Start typing your Java solution below
+        // DO NOT write main() function
+        long lo = 0;
     	long hi = x;
 
     	while(hi>lo){     
